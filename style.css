@@ -1,0 +1,177 @@
+body{
+	background-color:rgb(14, 13, 13);
+	margin: 0;
+	font-family:Roboto,Arial;
+	color: black;
+}
+
+.container{
+	background-color:white;
+	border-radius:5px;
+	margin:25px;
+	padding:30px;
+	box-shadow: 3px 3px 7px rgba(248, 246, 246, 0.4);
+	transition: transform 0.4s ease;
+}
+
+.container:hover{
+	transform: translateX(10px);
+}
+
+header{
+	background: linear-gradient(to right, #333, #555);
+	padding: 0.1px;
+}
+
+footer {
+	color: white;
+	text-align: center;
+}
+
+.navigation{
+	display:flex;
+	justify-content:center;
+}
+
+nav li {
+	list-style:none;
+	display:inline-block;
+	padding: 1px 0;
+}
+
+nav li a{
+	text-decoration: none;
+	font-size:18px;
+	margin:10px;
+	font-family:Roboto,Arial;
+	color: white;
+	transition: opacity 0.25s;
+}
+
+nav li a:hover{
+	opacity: 0.65;
+}
+
+
+.profile{
+	display:flex;
+	justify-content: center;
+}
+
+.image-container{
+	display:flex;
+	justify-content:center;
+}
+
+.image-container img{
+	height:150px;
+	width:150px;
+	margin-top:50px;
+	border-radius:75px;
+	border-color:white;
+	border-width:2px;
+	border-style:solid;
+}
+
+.name h2{
+	font-size:35px;
+	text-align:center;
+	color:white;
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+
+.intro{
+	text-align:center;
+	font-size:25px;
+	color:white;
+	margin-bottom:50px;
+}
+
+.links{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: -10px;
+}
+
+
+.linkedin, .github, .instagram{
+	height: 60px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	transition: opacity 0.25s ease;
+}
+
+.linkedin:hover, .github:hover, .instagram:hover{
+	opacity: 0.5;
+}
+
+.linkedin img, .github img, .instagram img{
+	height: 60px;
+	width: auto;
+	border-radius: 10px;
+	object-fit: contain;
+}
+
+h3{
+	font-size:25px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.container ul{
+	line-height:28px;
+	color:rgb(20, 20, 20);
+	font-size:20px;
+	margin:0;
+}
+
+.download{
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	margin: 20px 825px;
+}
+
+.download a{
+	color:white;
+	background-color:rgb(163, 23, 23);
+	text-decoration: none;
+	font-size: 20px; 
+	padding: 10px;
+	border-radius: 7px;
+	transition: opacity 0.2s ease;
+}
+
+.download:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.about-container ul{
+	list-style-type: square;
+}
+
+.chatbot-container {
+	background-color: grey;
+	margin: auto;
+	width: 50%;
+	padding: 20px;
+	
+	justify-content: center;
+
+}
+
+.input-chat {
+	width: 50%;
+	margin: auto;
+}
+
+.chat-log {
+	
+	background-color: red;
+}
+
+

@@ -1,20 +1,28 @@
 let buttonElement = document.querySelector('.input-chat');
 
-let chatElement = document.querySelector('.chat-log');
+let chatElement = document.querySelector('.chatbox');
 
 
 function sendMessage() {
 
   let chatMsg = buttonElement.value;
-  chatElement.innerHTML += `You: ${chatMsg}`;
-  botMessage(chatMsg);
+  let UserMessage = `<p>You: ${chatMsg}</p>`;
+  chatElement.innerHTML += UserMessage;
   buttonElement.value = '';
+  botMessage(chatMsg);
+  
   
 }
 
 function displayMessage(message) {
 
-  chatElement.innerHTML += `Bot: ${message}`;
+    let botMessage = `<p>Bot: ${message}</p>`;
+   
+    
+    setTimeout(() => {  
+        chatElement.innerHTML += botMessage;
+    }, 700);
+  
 
 }
 
@@ -31,7 +39,7 @@ function botMessage(input) {
   else if (input.toLowerCase().includes('name')) {
       botResponse = " I'm kanisto kevin ";
   } 
-  else if (input.toLowerCase().includes('tips')) {
+  else if (input.toLowerCase().includes('tip')) {
       botResponse = 'Sometimes even if you know how something is gonna end,that doesn\'t mean you can\'t enjoy the ride';
   }
   else if (input.toLowerCase().includes('saaptya')) {
@@ -40,8 +48,11 @@ function botMessage(input) {
   else if (input.toLowerCase().includes('saapten')) {
       botResponse = 'cool';
   }
-  else if (input.toLowerCase().includes('hobbies')) {
+  else if (input.toLowerCase().includes('hobby')) {
       botResponse = 'badminton,football,music';
+  }
+  else if (input.toLowerCase().includes('project')) {
+      botResponse = `Chess Program, Simple basketball game `;
   }
   else {
       botResponse = "I'm not sure how to respond to that. Try asking about my skills, projects, or contact information.";
@@ -49,3 +60,4 @@ function botMessage(input) {
 
   displayMessage(botResponse);
 }
+

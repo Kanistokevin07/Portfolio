@@ -112,14 +112,17 @@
 			<section id="chatbot">
 				<div class="container">
 					<h3>Chat with me!</h3>
-					<div class="chatbot-container">
-						<div class="chat-log"></div>
-						<input class="input-chat" placeholder="Type a message...">
-						<button class="chat-button" onclick="
+					<div class="chat-container">
+						<div class="chatbox"></div>
+						<input type="text" class="input-chat" placeholder="Type a message..." onkeydown="
+							if(event.key == 'Enter')
+								sendMessage();
+						
+						">
+						<button class="send-button" onclick="
 							sendMessage();
-					
-						">Send</button>
-				</div>
+						" >Send</button>				
+					</div>		
 			</section>
 		</div>
 		<footer>

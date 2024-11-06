@@ -154,24 +154,52 @@ h3{
 	list-style-type: square;
 }
 
-.chatbot-container {
-	background-color: grey;
+.chat-container {
+
+	background-color: rgb(253, 249, 249);
 	margin: auto;
 	width: 50%;
 	padding: 20px;
-	
 	justify-content: center;
-
-}
-
-.input-chat {
-	width: 50%;
-	margin: auto;
-}
-
-.chat-log {
+	height: 500px;
+	border-radius: 30px;
+	box-shadow: 14px 14px 14px rgba(rgb(8, 8, 8));
 	
-	background-color: red;
 }
+
+.chatbox { 
+	
+	border-style: solid;
+	border-color: rgb(172, 168, 168);
+	border-radius: 10px;
+	height: 400px;
+	margin: 30px 5px;
+	padding: 10px;
+	overflow: auto;
+}
+
+.input-chat{
+	padding: 10px;
+	margin: auto;
+	width: 50%; 
+	font-size: 15px;
+}
+
+.send-button {
+	background-color: black;
+	color: white;
+	padding: 13px;
+	border-radius: 4px;
+	border-style: none;
+	cursor: pointer;
+	transition: opacity 0.2s ease;
+}
+
+.send-button:hover {
+	opacity: 0.85;
+}
+
+
+
 
 
